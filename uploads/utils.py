@@ -14,8 +14,7 @@ def normalize_file_txt(file) -> dict:
             "card": line[30:42],
             "hour": f"{line[1:5]}-{line[5:7]}-{line[7:9]} {line[42:44]}:{line[44:46]}:{line[46:48]}",
             "owner": line[48:62].strip(),
-            "place": line[62:].strip(),
+            "store": line[62:].strip(),
         }
 
         Transaction.objects.create(**data)
-
