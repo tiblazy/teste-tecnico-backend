@@ -1,3 +1,10 @@
+# Test Técnico BackEnd
+
+> O projeto foi desenvolvivo com foco em receber arquivos .txt sem formatação e conseguir retornar ele de forma formatada, e inserido a um banco de dados relacional, retornando inicialmente, nome da loja, transações realizadas e seu saldo atual com base nas transações, podendo escalonar ao usar os demais dados que são passados e guardados no banco.
+
+## Tecnologias Utilizadas:
+    Python, Django (DRF), Docker, Heroku,
+
 ## Instalação Rápida:
     instalar máquina virtual:
 > python -m venv venv
