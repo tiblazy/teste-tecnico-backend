@@ -7,17 +7,16 @@ import dj_database_url
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-dotenv.load_dotenv()
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv('SECRET_KEY')
+SECRET_KEY = "django-insecure-pbcequ86b%kfa*r#-+f*yhz-6_&qgjl(#0bmnul2lp331njbqm"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['backend-django-tiblazy.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['backend-django-tiblazy.herokuapp.com', 'localhost', "127.0.0.1"]
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -85,7 +84,7 @@ DATABASES = {
         "NAME": os.getenv("DB_NAME"),
         "USER": os.getenv("DB_USER"),
         "PASSWORD": os.getenv("DB_PASSWORD"),
-        "HOST": "127.0.0.1",
+        "HOST": "localhost",
         "PORT": 5432,
   }
 }
